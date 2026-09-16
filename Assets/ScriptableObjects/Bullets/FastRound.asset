@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf31c923009b74321ada3ed213bd84e7, type: 3}
+  m_Name: FastRound
+  m_EditorClassIdentifier: Assembly-CSharp::BulletData
+  prefab: {fileID: 4369686038074762061, guid: 514a74a73ca3d41e6802d19b3dbb472b, type: 3}
+  damage: 12
+  speed: 20
+  range: 20
+  sprite: {fileID: 0}
+  color: {r: 0.35, g: 0.85, b: 1, a: 1}
+  size: {x: 0.38, y: 0.1}
