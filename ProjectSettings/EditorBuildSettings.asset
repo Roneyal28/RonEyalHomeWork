@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Character Selection.unity
+    guid: b50ad2cf5d07a4645afaeb0d97bb385e
+  - enabled: 1
     path: Assets/Scenes/ArsenalArmory.unity
     guid: 656483f9b4dcd4deeb365675703a8f32
   m_configObjects: {}
