@@ -87,9 +87,11 @@ public static class Task2Checks
         Check(!environment.FlashlightEnabled && environment.mainDirectionalLight.intensity > darkIntensity, "Bright room disables lamp and brightens scene");
 
         Vector3 oldPosition = selection.ActiveTransform.position;
+        Vector3 oldCameraPosition = joystick.cameraRig.position;
         Quaternion oldCameraRotation = joystick.cameraRig.rotation;
         joystick.ApplyInput(new Vector2(1f, 0.5f), new Vector2(1f, 0.5f), 0.5f);
         Check(selection.ActiveTransform.position != oldPosition, "Left virtual stick moves active character");
+        Check(joystick.cameraRig.position == oldCameraPosition, "Left virtual stick does not move camera rig");
         Check(joystick.cameraRig.rotation != oldCameraRotation, "Right virtual stick orbits camera");
         var sticks = Object.FindObjectsByType<OnScreenStick>(FindObjectsInactive.Include, FindObjectsSortMode.None);
         Check(sticks.Length == 2, "Two OnScreenStick controls exist");

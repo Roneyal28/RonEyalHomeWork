@@ -50,7 +50,6 @@ public class BonusJoystickController : MonoBehaviour
 
         yaw += look.x * orbitSpeed * deltaTime;
         pitch = Mathf.Clamp(pitch - look.y * orbitSpeed * 0.65f * deltaTime, minimumPitch, maximumPitch);
-        cameraRig.position = selection.ActiveTransform.position + Vector3.up * 1.1f;
         cameraRig.rotation = Quaternion.Euler(pitch, yaw, 0f);
     }
 
