@@ -90,6 +90,6 @@ public class AmbientLightController : MonoBehaviour
     {
         if (simulatedLuxSlider != null) simulatedLuxSlider.transform.parent.gameObject.SetActive(!UsingRealSensor);
         if (sensorLabel != null)
-            sensorLabel.text = (UsingRealSensor ? "Room light sensor" : "Editor light simulation") + "  " + CurrentLux.ToString("0") + " lux" + (FlashlightEnabled ? "  |  lamp ON" : "");
+            sensorLabel.text = (UsingRealSensor ? "Room light sensor" : "Light simulation") + "  " + CurrentLux.ToString("0")  + (FlashlightEnabled ? "  |  FlashLight On" : "");
     }
 }
